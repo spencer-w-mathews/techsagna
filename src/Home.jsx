@@ -2,20 +2,23 @@
 import React from 'react';
 import './Home.css'; // For styling the homepage
 import logo from './logo.svg'
+import ScrollToFade from './ScrollToFade';
+
 
 const Home = () => {
   return (
     <div className="homepage">
       {/* Hero Section */}
+      <ScrollToFade>
       <section className="hero">
         <div className="hero-content">
           <h1>Welcome to TechSagna</h1>
-          <img src={logo} height={50}/>
+          {/* <img src={logo} height={50}/> */}
           <p>Empowering Your Business with Reliable IT Solutions</p>
           <a href="/contact" className="cta-button">Get Started</a>
         </div>
       </section>
-
+      </ScrollToFade>
       {/* Services Section */}
       <section className="services">
         <h2>Our Services</h2>

@@ -8,7 +8,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>About TechSagna</h1>
+          <h1>About Us</h1>
           <p>Empowering Businesses Through Managed IT Services</p>
         </div>
       </section>

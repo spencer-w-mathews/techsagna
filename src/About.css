@@ -5,13 +5,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  .hero {
-    background-color: #333; /* Changed to #333 */
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-  }
+
   
   .hero h1 {
     font-size: 3em;
@@ -24,7 +18,7 @@
   }
   
   .cta-button {
-    background-color: #f9a826; /* Retaining original color for CTA button */
+    background-color: #ffffff; /* Retaining original color for CTA button */
     color: white;
     padding: 10px 30px;
     text-decoration: none;
@@ -34,7 +28,7 @@
   }
   
   .cta-button:hover {
-    background-color: #e08919;
+    background-color: #ffffff;
   }
   
   .mission, .values, .team {
@@ -71,12 +65,6 @@
     color: #555;
   }
   
-  .cta {
-    background-color: #333; /* Changed to #333 */
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-  }
   
   .cta h2 {
     font-size: 2.5em;
@@ -89,7 +77,7 @@
   }
   
   .footer {
-    background-color: #333;
+    background-color: #BDBDBD;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -104,4 +92,138 @@
   .footer .social-media a:hover {
     text-decoration: underline;
   }
+  
+  @media (max-width: 1024px) {
+    .hero {
+      padding: 60px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 2.5em;
+    }
+  
+    .hero p {
+      font-size: 1.3em;
+    }
+  
+    .services {
+      padding: 60px 20px;
+    }
+  
+    .values h2 {
+      font-size: 2.2em;
+    }
+  
+    .value-cards {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .value-card {
+      width: 80%;  /* Stacks the service cards vertically on tablets */
+      margin-bottom: 30px;
+    }
+  
+    .cta {
+      padding: 50px 20px;
+    }
+  
+    .cta h2 {
+      font-size: 2.3em;
+    }
+  
+    .cta p {
+      font-size: 1.1em;
+    }
+  
+    .footer {
+      padding: 15px 0;
+    }
+  }
+  
+  /* Small Mobile (max-width: 768px) */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.3em;
+    }
+  
+    .hero p {
+      font-size: 1.2em;
+    }
+  
+    .cta-button {
+      padding: 10px 25px;
+      font-size: 1em;
+    }
+  
+    .value-cards {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: -10px;
+      gap: 20px;
+    }
+  
+    .value-card {
+      width: 90%; /* Make each service card full-width on small screens */
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+  
+    .cta {
+      padding: 40px 20px;
+    }
+  
+    .cta h2 {
+      font-size: 2.2em;
+    }
+  
+    .cta p {
+      font-size: 1.1em;
+    }
+  
+    .footer {
+      font-size: 0.9em;
+    }
+  }
+  
+  /* Extra Small Mobile (max-width: 480px) */
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.8em;
+    }
+  
+    .hero p {
+      font-size: 1.1em;
+    }
+  
+    .cta-button {
+      padding: 8px 20px;
+      font-size: 0.9em;
+    }
+  
+    .value-cards {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .value-card {
+      width: 95%; /* Full-width cards on smaller screens */
+      padding: 15px;
+      margin-left: 10px;
+    }
+  
+    .footer {
+      padding: 10px 0;
+      font-size: 0.85em;
+    }
+  
+    .footer .social-media a {
+      margin: 0 5px;
+    }
+  }
+  
   

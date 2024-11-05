@@ -1,16 +1,30 @@
 /* Home.css */
+
 .homepage {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
   .hero {
-    background-color: #333; /* Dark background for hero section */
-    color: white;
-    padding: 80px 20px;
+    background-color: #BDBDBD; /* Dark background for hero section */
+    color: #333;
+    padding: 120px 20px 80px;
     text-align: center;
+    background: linear-gradient(45deg, #d0e7ff, #f7c9dd, #e2e2e2, #c8d7e2);
+  background-size: 400% 400%; /* Makes the gradient larger than the container */
+  animation: gradientAnimation 10s ease infinite; /* Animate the gradient */
+  }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
   
   .hero h1 {
@@ -24,17 +38,21 @@
   }
   
   .cta-button {
-    background-color: #f9a826; /* Accent color for CTA */
+    background-color: #ffffff; /* Accent color for CTA */
     color: white;
     padding: 12px 30px;
     text-decoration: none;
     font-size: 1.1em;
     border-radius: 5px;
+    background: linear-gradient(45deg, #d0e7ff, #f7c9dd, #e2e2e2, #c8d7e2);
+    box-shadow: 6px 6px 12px #333;
+    background-size: 400% 400%; /* Makes the gradient larger than the container */
+    animation: gradientAnimation 10s ease infinite; /* Animate the gradient */
     transition: background-color 0.3s ease;
   }
   
   .cta-button:hover {
-    background-color: #e08919; /* Slight hover effect */
+    background-color: #ffffff; /* Slight hover effect */
   }
   
   .services {
@@ -77,15 +95,15 @@
   }
   
   .service-card p {
-    color: #555;
+    color: #fff;
     font-size: 1.1em;
   }
   
   .cta {
-    background-color: #333;
-    color: white;
+    background-color: #fff;
     padding: 60px 20px;
     text-align: center;
+    margin-top: -120px;
   }
   
   .cta h2 {
@@ -99,10 +117,13 @@
   }
   
   .footer {
-    background-color: #333;
+    background-color: #BDBDBD;
     color: white;
     padding: 20px 0;
     text-align: center;
+    background: linear-gradient(45deg, #d0e7ff, #f7c9dd, #e2e2e2, #c8d7e2);
+    background-size: 400% 400%; /* Makes the gradient larger than the container */
+    animation: gradientAnimation 10s ease infinite; /* Animate the gradient */
   }
   
   .footer .social-media a {

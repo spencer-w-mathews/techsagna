@@ -6,12 +6,6 @@
     box-sizing: border-box;
   }
   
-  .hero {
-    background-color: #333; /* Dark background for hero section */
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-  }
   
   .hero h1 {
     font-size: 3em;
@@ -71,8 +65,8 @@
   }
   
   .cta-button {
-    background-color: #f9a826; /* Accent color for CTA button */
-    color: white;
+    background-color: #ffffff; /* Accent color for CTA button */
+    color: #333;
     padding: 12px 30px;
     text-decoration: none;
     font-size: 1.1em;
@@ -84,7 +78,7 @@
   }
   
   .cta-button:hover {
-    background-color: #e08919; /* Hover effect */
+    background-color: #ffffff; /* Hover effect */
   }
   
   .submission-message {
@@ -94,8 +88,8 @@
   }
   
   .footer {
-    background-color: #333;
-    color: white;
+    background-color: #BDBDBD;
+    color: #333;
     padding: 20px 0;
     text-align: center;
   }

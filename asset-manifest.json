@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/techsagna/static/css/main.4d89cbef.css",
-    "main.js": "/techsagna/static/js/main.aad9ff9a.js",
+    "main.css": "/techsagna/static/css/main.650c5418.css",
+    "main.js": "/techsagna/static/js/main.39906687.js",
     "static/js/453.ba8faeaa.chunk.js": "/techsagna/static/js/453.ba8faeaa.chunk.js",
     "static/media/techsagna-02long.jpg": "/techsagna/static/media/techsagna-02long.dfddcd36291785c14993.jpg",
     "static/media/roboto-latin-900italic.woff": "/techsagna/static/media/roboto-latin-900italic.c20d916c1a1b094c1cec.woff",
@@ -29,12 +29,12 @@
     "static/media/roboto-latin-400.woff2": "/techsagna/static/media/roboto-latin-400.176f8f5bd5f02b3abfcf.woff2",
     "static/media/roboto-latin-900.woff2": "/techsagna/static/media/roboto-latin-900.870c8c1486f76054301a.woff2",
     "index.html": "/techsagna/index.html",
-    "main.4d89cbef.css.map": "/techsagna/static/css/main.4d89cbef.css.map",
-    "main.aad9ff9a.js.map": "/techsagna/static/js/main.aad9ff9a.js.map",
+    "main.650c5418.css.map": "/techsagna/static/css/main.650c5418.css.map",
+    "main.39906687.js.map": "/techsagna/static/js/main.39906687.js.map",
     "453.ba8faeaa.chunk.js.map": "/techsagna/static/js/453.ba8faeaa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d89cbef.css",
-    "static/js/main.aad9ff9a.js"
+    "static/css/main.650c5418.css",
+    "static/js/main.39906687.js"
   ]
 }

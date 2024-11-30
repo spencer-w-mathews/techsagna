@@ -14,7 +14,6 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
           <ScrollToFade>

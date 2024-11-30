@@ -7,7 +7,6 @@ const Contact = () => {
   // State to manage form submission status
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitted(true);

@@ -6,20 +6,27 @@
     box-sizing: border-box;
   }
 
-  
+  --#f28a2e
+  --#f7db1f
+  --
   .hero h1 {
     font-size: 3em;
     margin-bottom: 10px;
+    color: #eee;
   }
+
   
   .hero p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    background-image: linear-gradient(#f7db1f, #f28a2e);
+    color: transparent;
+    background-clip: text;
   }
   
   .cta-button {
-    background-color: #ffffff; /* Retaining original color for CTA button */
-    color: white;
+    background-color: #eeeeee; /* Retaining original color for CTA button */
+    color: #eee;
     padding: 10px 30px;
     text-decoration: none;
     font-size: 1.1em;
@@ -28,18 +35,29 @@
   }
   
   .cta-button:hover {
-    background-color: #ffffff;
+    background-color: #eeeeee;
   }
   
-  .mission, .values, .team {
+  .mission, .values {
     padding: 50px 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #333;
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+    color: #eee;
+  }
+
+  .team {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #000;
+    color: #eee;
   }
   
   .mission h2, .values h2, .team h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    margin-top: -20px;
   }
   
   .value-cards {
@@ -49,20 +67,13 @@
   }
   
   .value-card {
-    background-color: white;
+    background-color: #000;
+    color: #eee;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
     text-align: center;
-  }
-  
-  .value-card h3 {
-    color: #333;
-  }
-  
-  .value-card p {
-    color: #555;
   }
   
   
@@ -76,15 +87,8 @@
     margin-bottom: 30px;
   }
   
-  .footer {
-    background-color: #BDBDBD;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
   .footer .social-media a {
-    color: white;
+    color: #eee;
     text-decoration: none;
     margin: 0 10px;
   }
@@ -95,7 +99,7 @@
   
   @media (max-width: 1024px) {
     .hero {
-      padding: 60px 20px;
+      padding: 100px 20px;
     }
   
     .hero h1 {
@@ -109,6 +113,7 @@
     .services {
       padding: 60px 20px;
     }
+    
   
     .values h2 {
       font-size: 2.2em;
@@ -147,7 +152,11 @@
     .hero h1 {
       font-size: 2.3em;
     }
-  
+
+    .team {
+      margin-bottom: 120px;
+    }
+    
     .hero p {
       font-size: 1.2em;
     }

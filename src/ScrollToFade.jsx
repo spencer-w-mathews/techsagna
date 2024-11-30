@@ -15,7 +15,7 @@ const ScrollToFade = ({ children }) => {
           observer.unobserve(fadeRef.current); // Stop observing once it's visible
         }
       },
-      { threshold: 0.5 } // Trigger when 50% of the element is visible
+      { threshold: 0.3 } // Trigger when 50% of the element is visible
     );
 
     if (fadeRef.current) {

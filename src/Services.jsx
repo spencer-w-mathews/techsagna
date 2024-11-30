@@ -1,6 +1,7 @@
 // Services.js
 import React from 'react';
 import './Services.css'; // Importing CSS for styling the services page
+import ScrollToFade from './ScrollToFade';
 
 const Services = () => {
   return (
@@ -8,8 +9,10 @@ const Services = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
+          <ScrollToFade>
           <h1>Our Services</h1>
           <p>Explore how TechSagna can help optimize your business with cutting-edge technology solutions.</p>
+         </ScrollToFade>
         </div>
       </section>
 
@@ -19,42 +22,39 @@ const Services = () => {
         <p>At TechSagna, we provide a wide range of IT services tailored to help your business grow. Below are some of the services we offer:</p>
       </section>
 
-      {/* Service Cards Section */}
-      <section className="service-cards">
-        <div className="service-card">
-          <h3>Microsoft 365 Projects</h3>
-          <p>
-            Full-service project work for every aspect of Microsoft 365, including Entra/Azure, SharePoint, Purview, application implementation, and more.
-          </p>
-        </div>
+            {/* Services Section */}
+      <section className="services">
+        <div className="service-card-homes">
+          {/* Microsoft 365 Projects */}
 
-        <div className="service-card">
-          <h3>Cyber Insurance Hardening</h3>
-          <p>
-            We help you prepare for cyber insurance and address security concerns to lower your premiums by improving your security posture.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>Device Management</h3>
-          <p>
-            We work with all major MDM, UEM, and DDM platforms to build, implement, migrate, and manage your device management solutions.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>Web and App Development</h3>
-          <p>
-            From web development to mobile app solutions, we build applications that are scalable, secure, and user-friendly.
-          </p>
+          <div className="service-card-home">
+          <ScrollToFade>
+            <h3>Microsoft 365 Projects</h3>
+            <p>Full-service project work for every aspect of Microsoft 365, including Entra/Azure, SharePoint, Purview, application implementation, and more.</p>
+          </ScrollToFade>
+          </div>
+          {/* Cyber Insurance Hardening */}
+          <div className="service-card-home">
+          <ScrollToFade>
+            <h3>Cyber Insurance Hardening</h3>
+            <p>We help you prepare to obtain cyber insurance and assist with cleaning up security vulnerabilities to lower your premiums.</p>
+          </ScrollToFade>
+          </div>
+          {/* Device Management */}
+          <div className="service-card-home">
+          <ScrollToFade>
+            <h3>Device Management</h3>
+            <p>We work with all major MDM, UEM, and DDM platforms to build, implement, migrate, and manage device management solutions for your organization.</p>
+          </ScrollToFade>
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTAr Section */}
       <section className="cta">
         <h2>Ready to Get Started?</h2>
         <p>Contact us today to see how we can transform your IT infrastructure with our expert services.</p>
-        <a href="/contact" className="cta-button">Reach Out Now</a>
+        <a href="#/contact" className="cta-button">Reach Out Now</a>
       </section>
 
       {/* Footer */}

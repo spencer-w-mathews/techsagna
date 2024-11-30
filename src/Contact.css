@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  z
   
   .hero h1 {
     font-size: 3em;
@@ -20,7 +20,10 @@
   .contact-form-section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f9f9f9; /* Light background for contact form */
+    background-color: #333;
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+    color: #eee; /* Light background for contact form */
   }
   
   .contact-form-section h2 {
@@ -47,11 +50,12 @@
   
   .form-group label {
     font-size: 1.1em;
-    color: #333;
+    color: #eee;
   }
   
   .form-group input,
   .form-group textarea {
+    background-color: #eee;
     width: 100%;
     padding: 10px;
     font-size: 1em;
@@ -65,8 +69,8 @@
   }
   
   .cta-button {
-    background-color: #ffffff; /* Accent color for CTA button */
-    color: #333;
+    background-color: #eeeeee; /* Accent color for CTA button */
+    color: #eee;
     padding: 12px 30px;
     text-decoration: none;
     font-size: 1.1em;
@@ -78,7 +82,7 @@
   }
   
   .cta-button:hover {
-    background-color: #ffffff; /* Hover effect */
+    background-color: #eeeeee; /* Hover effect */
   }
   
   .submission-message {
@@ -87,15 +91,9 @@
     color: #28a745; /* Green for success message */
   }
   
-  .footer {
-    background-color: #BDBDBD;
-    color: #333;
-    padding: 20px 0;
-    text-align: center;
-  }
   
   .footer .social-media a {
-    color: white;
+    color: #eee;
     text-decoration: none;
     margin: 0 10px;
   }

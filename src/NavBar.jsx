@@ -20,10 +20,11 @@ const Navbar = () => {
         ☰
       </button>
       <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
-        <li><Link to="/" className="nav-link" onClick={toggleMenu}>Home</Link></li>
-        <li><Link to="/about" className="nav-link" onClick={toggleMenu}>About</Link></li>
-        <li><Link to="/services" className="nav-link" onClick={toggleMenu}>Services</Link></li>
-        <li><Link to="/contact" className="nav-link" onClick={toggleMenu}>Contact</Link></li>
+        <div onClick={toggleMenu}className='close'></div>
+        <li><a href="#/" className="nav-link" onClick={toggleMenu}>Home</a></li>
+        <li><a href="#/about" className="nav-link" onClick={toggleMenu}>About</a></li>
+        <li><a href="#/services" className="nav-link" onClick={toggleMenu}>Services</a></li>
+        <li><a href="#/contact" className="nav-link" onClick={toggleMenu}>Contact</a></li>
       </ul>
     </nav>
   );

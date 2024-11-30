@@ -19,30 +19,40 @@
   .services-overview {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f9f9f9; /* Light background for the overview section */
+    background-color: #333; 
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+    color: #eee;/* Light background for the overview section */
   }
   
   .services-overview h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #eee;
   }
+  
   
   .services-overview p {
     font-size: 1.2em;
     margin-bottom: 40px;
+    color: #eee;
   }
   
   .service-cards {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
-    padding: 60px 20px;
-    text-align: center;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: stretch;
+    background-color: #333;
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
   }
   
   .service-card {
-    background-color: white;
+    background-color: #000;
+    color: #eee;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -56,12 +66,12 @@
   
   .service-card h3 {
     font-size: 1.8em;
-    color: #333;
+    color: #eee;
     margin-bottom: 20px;
   }
   
   .service-card p {
-    color: #555;
+    color: #eee;
     font-size: 1.1em;
   }
   
@@ -76,8 +86,8 @@
   }
   
   .cta-button {
-    background-color: #ffffff; /* Accent color for CTA button */
-    color: white;
+    background-color: #eeeeee; /* Accent color for CTA button */
+    color: #eee;
     padding: 12px 30px;
     text-decoration: none;
     font-size: 1.1em;
@@ -86,18 +96,12 @@
   }
   
   .cta-button:hover {
-    background-color: #ffffff; /* Hover effect */
+    background-color: #eeeeee; /* Hover effect */
   }
   
-  .footer {
-    background-color: #BDBDBD;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
   
   .footer .social-media a {
-    color: white;
+    color: #eee;
     text-decoration: none;
     margin: 0 10px;
   }
@@ -111,7 +115,7 @@
   /* Tablets and below (max-width: 1024px) */
   @media (max-width: 1024px) {
     .hero {
-      padding: 60px 20px;
+      padding: 100px 20px;
     }
   
     .hero h1 {
@@ -181,6 +185,7 @@
     .service-card {
       width: 90%; /* Full-width cards on small screens */
       padding: 20px;
+      margin-left: -2px;
     }
   
     .cta {

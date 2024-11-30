@@ -1,6 +1,7 @@
 // Contact.js
 import React, { useState } from 'react';
 import './Contact.css'; // For styling the contact page
+import ScrollToFade from './ScrollToFade';
 
 const Contact = () => {
   // State to manage form submission status
@@ -19,8 +20,10 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
+          <ScrollToFade>
           <h1>Contact TechSagna</h1>
           <p>Let us help you drive your business forward with innovative IT solutions.</p>
+          </ScrollToFade>
         </div>
       </section>
 

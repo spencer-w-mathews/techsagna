@@ -4,16 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #333;
   }
   
   .hero {
-    background-color: #BDBDBD; /* Dark background for hero section */
-    color: #333;
-    padding: 120px 20px 80px;
+    background-color: #000; /* Dark background for hero section */
+    color: #eee;
+    padding: 150px 20px 80px;
     text-align: center;
-    background: linear-gradient(45deg, #d0e7ff, #f7c9dd, #e2e2e2, #c8d7e2);
-  background-size: 400% 400%; /* Makes the gradient larger than the container */
-  animation: gradientAnimation 10s ease infinite; /* Animate the gradient */
   }
   @keyframes gradientAnimation {
     0% {
@@ -27,6 +25,12 @@
     }
   }
   
+  .hero-img{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .hero h1 {
     font-size: 3em;
     margin-bottom: 10px;
@@ -38,13 +42,11 @@
   }
   
   .cta-button {
-    background-color: #ffffff; /* Accent color for CTA */
-    color: white;
     padding: 12px 30px;
     text-decoration: none;
     font-size: 1.1em;
     border-radius: 5px;
-    background: linear-gradient(45deg, #d0e7ff, #f7c9dd, #e2e2e2, #c8d7e2);
+    background: linear-gradient(45deg, #000, #f7db1f, #f28a2e, #000);
     box-shadow: 6px 6px 12px #333;
     background-size: 400% 400%; /* Makes the gradient larger than the container */
     animation: gradientAnimation 10s ease infinite; /* Animate the gradient */
@@ -52,58 +54,65 @@
   }
   
   .cta-button:hover {
-    background-color: #ffffff; /* Slight hover effect */
+    background-color: #eeeeee; /* Slight hover effect */
   }
   
   .services {
-    padding: 80px 20px;
+    padding: 20px 20px;
     text-align: center;
-    background-color: #f9f9f9; /* Light background for services */
+    background-color: #333;
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+    color: #eee; /* Light background for services */
   }
   
   .services h2 {
     font-size: 2.5em;
-    margin-bottom: 40px;
   }
   
-  .service-cards {
+  .service-card-homes {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 40px;
     align-items: stretch;
   }
   
-  .service-card {
-    background-color: white;
+  .service-card-home {
+    background-color: #000;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     width: 22%;
     text-align: center;
     transition: transform 0.3s ease;
+    color: #eee;
   }
   
-  .service-card:hover {
+  .service-card-home:hover {
     transform: translateY(-10px); /* Slight hover effect */
   }
   
-  .service-card h3 {
+  .service-card-home h3 {
     font-size: 1.6em;
-    color: #333;
+    color: #eee;
     margin-bottom: 15px;
   }
   
-  .service-card p {
-    color: #fff;
+  .service-card-home p {
+    color: #eee;
     font-size: 1.1em;
   }
   
   .cta {
-    background-color: #fff;
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+    background-color: #333;
+    color: #eee;
     padding: 60px 20px;
     text-align: center;
-    margin-top: -120px;
+    margin-top: -3px;
   }
   
   .cta h2 {
@@ -117,17 +126,15 @@
   }
   
   .footer {
-    background-color: #BDBDBD;
-    color: white;
+    background-color: #000;
+    color: #eee;
     padding: 20px 0;
     text-align: center;
-    background: linear-gradient(45deg, #d0e7ff, #f7c9dd, #e2e2e2, #c8d7e2);
-    background-size: 400% 400%; /* Makes the gradient larger than the container */
-    animation: gradientAnimation 10s ease infinite; /* Animate the gradient */
+ 
   }
   
   .footer .social-media a {
-    color: white;
+    color: #eee;
     text-decoration: none;
     margin: 0 10px;
   }
@@ -141,7 +148,13 @@
   /* Tablets and below (max-width: 1024px) */
   @media (max-width: 1024px) {
     .hero {
-      padding: 60px 20px;
+      padding: 100px 20px;
+      margin-top: 40px;
+    }
+    .hero-img{
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
     }
   
     .hero h1 {
@@ -160,13 +173,13 @@
       font-size: 2.2em;
     }
   
-    .service-cards {
+    .service-card-homes {
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
   
-    .service-card {
+    .service-card-home {
       width: 80%;  /* Stacks the service cards vertically on tablets */
       margin-bottom: 30px;
     }
@@ -203,7 +216,7 @@
       font-size: 1em;
     }
   
-    .service-cards {
+    .service-card-homes {
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -211,14 +224,16 @@
       gap: 20px;
     }
   
-    .service-card {
+    .service-card-home {
       width: 90%; /* Make each service card full-width on small screens */
       margin-bottom: 20px;
       padding: 20px;
+      margin-left: -2px;
     }
   
     .cta {
       padding: 40px 20px;
+      margin-top: -120px;
     }
   
     .cta h2 {
@@ -249,14 +264,14 @@
       font-size: 0.9em;
     }
   
-    .service-cards {
+    .service-card-homes {
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 20px;
     }
   
-    .service-card {
+    .service-card-home {
       width: 95%; /* Full-width cards on smaller screens */
       padding: 15px;
     }
